@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presentes - Casamento Glorinha & Lucas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-stone-50 text-gray-800 font-sans scroll-smooth">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-3xl font-serif text-teal-900">G & L</a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Início</a>
+                    <a href="local.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Local</a>
+                    <a href="presentes.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Lista de Presentes</a>
+                    <a href="dresscode.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Dress Code</a>
+                    <a href="rsvp.html" class="bg-teal-800 text-white px-5 py-2 rounded-full hover:bg-teal-700 transition shadow-md">
+                        Confirmar Presença
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative pt-32 pb-20 px-4 min-h-screen bg-cover bg-center bg-fixed" style="background-image: url('flores.png');">
+        
+        <div class="absolute inset-0 bg-orange-50/50"></div>
+
+        <div class="relative z-10 max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-serif text-teal-900 mb-6 drop-shadow-sm">Lista de Presentes</h1>
+            <p class="text-lg md:text-xl text-black max-w-2xl mx-auto mb-12">
+                O maior presente é a presença de vocês! Mas, se desejarem nos abençoar com algo a mais, criamos algumas cotas divertidas para a nossa lua de mel e montagem do nosso lar.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-stone-100 flex flex-col items-center">
+                    <img src="https://via.placeholder.com/300x200?text=Foto+Comida" alt="Almoço garantido" class="w-full h-40 object-cover rounded-xl mb-4">
+                    <h2 class="text-sm font-medium text-stone-800 mb-2 flex-grow">1 mês de almoço garantido em casa</h2>
+                    <p class="text-lg text-teal-800 font-semibold mb-4">R$ 478,71</p>
+                    <button onclick="abrirPix('1 mês de almoço garantido em casa')" class="w-full bg-teal-800 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition text-sm">Comprar</button>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-stone-100 flex flex-col items-center">
+                    <img src="https://via.placeholder.com/300x200?text=Foto+Hotel" alt="Diárias hotel" class="w-full h-40 object-cover rounded-xl mb-4">
+                    <h2 class="text-sm font-medium text-stone-800 mb-2 flex-grow">7 diárias no hotel</h2>
+                    <p class="text-lg text-teal-800 font-semibold mb-4">R$ 3.220,98</p>
+                    <button onclick="abrirPix('7 diárias no hotel')" class="w-full bg-teal-800 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition text-sm">Comprar</button>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-stone-100 flex flex-col items-center">
+                    <img src="https://via.placeholder.com/300x200?text=Foto+Academia" alt="Academia" class="w-full h-40 object-cover rounded-xl mb-4">
+                    <h2 class="text-sm font-medium text-stone-800 mb-2 flex-grow">Academia para os noivos entrarem em forma depois da lua de mel</h2>
+                    <p class="text-lg text-teal-800 font-semibold mb-4">R$ 570,27</p>
+                    <button onclick="abrirPix('Academia para os noivos')" class="w-full bg-teal-800 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition text-sm">Comprar</button>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-stone-100 flex flex-col items-center">
+                    <img src="https://via.placeholder.com/300x200?text=Foto+Rodo" alt="Rodo Mágico" class="w-full h-40 object-cover rounded-xl mb-4">
+                    <h2 class="text-sm font-medium text-stone-800 mb-2 flex-grow">Acessório de última geração para cuidar da casa</h2>
+                    <p class="text-lg text-teal-800 font-semibold mb-4">R$ 128,49</p>
+                    <button onclick="abrirPix('Acessório cuidar da casa')" class="w-full bg-teal-800 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition text-sm">Comprar</button>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-stone-100 flex flex-col items-center">
+                    <img src="https://via.placeholder.com/300x200?text=Foto+Esmerilhadeira" alt="Cortar a unha" class="w-full h-40 object-cover rounded-xl mb-4">
+                    <h2 class="text-sm font-medium text-stone-800 mb-2 flex-grow">Acessório para cortar a unha do dedão do noivo</h2>
+                    <p class="text-lg text-teal-800 font-semibold mb-4">R$ 249,81</p>
+                    <button onclick="abrirPix('Cortar unha do dedão')" class="w-full bg-teal-800 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition text-sm">Comprar</button>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-stone-100 flex flex-col items-center">
+                    <img src="https://via.placeholder.com/300x200?text=Foto+Frigobar" alt="Frigobar" class="w-full h-40 object-cover rounded-xl mb-4">
+                    <h2 class="text-sm font-medium text-stone-800 mb-2 flex-grow">Acesso garantido ao frigobar do quarto</h2>
+                    <p class="text-lg text-teal-800 font-semibold mb-4">R$ 174,27</p>
+                    <button onclick="abrirPix('Acesso ao frigobar')" class="w-full bg-teal-800 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition text-sm">Comprar</button>
+                </div>
+                
+                <div class="bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-stone-100 flex flex-col items-center">
+                    <img src="https://via.placeholder.com/300x200?text=Foto+Balanca" alt="Balança" class="w-full h-40 object-cover rounded-xl mb-4">
+                    <h2 class="text-sm font-medium text-stone-800 mb-2 flex-grow">Balança para os noivos não engordarem após o casamento</h2>
+                    <p class="text-lg text-teal-800 font-semibold mb-4">R$ 112,46</p>
+                    <button onclick="abrirPix('Balança para noivos')" class="w-full bg-teal-800 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition text-sm">Comprar</button>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg border border-stone-100 flex flex-col items-center">
+                    <img src="https://via.placeholder.com/300x200?text=Foto+Spa" alt="Massagem" class="w-full h-40 object-cover rounded-xl mb-4">
+                    <h2 class="text-sm font-medium text-stone-800 mb-2 flex-grow">Banho e massagem relaxante</h2>
+                    <p class="text-lg text-teal-800 font-semibold mb-4">R$ 402,03</p>
+                    <button onclick="abrirPix('Banho e massagem')" class="w-full bg-teal-800 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition text-sm">Comprar</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div id="modalPix" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+        <div class="bg-white p-8 rounded-2xl shadow-2xl max-w-sm w-full text-center relative">
+            <button onclick="fecharPix()" class="absolute top-4 right-4 text-stone-400 hover:text-teal-900 text-2xl">&times;</button>
+            <h3 class="text-2xl font-serif text-teal-900 mb-2">Muito Obrigado!</h3>
+            <p class="text-stone-600 mb-6 text-sm" id="textoModal">Ao fazer a transferência, coloque o valor exato da cota escolhida.</p>
+            
+            <div class="bg-stone-100 p-4 rounded-xl inline-block mb-6 border border-stone-200">
+                <img src="qrcode.png" alt="QR Code PIX" class="w-48 h-48 mx-auto" onerror="this.src='https://via.placeholder.com/200?text=Seu+QR+Code'">
+            </div>
+
+            <p class="text-stone-800 font-medium mb-2">Ou use o PIX Copia e Cola:</p>
+            <div class="flex items-center bg-stone-100 rounded-lg p-2 border border-stone-200">
+                <input type="text" id="chavePix" value="telefone-ou-email-dos-noivos@pix.com.br" readonly class="bg-transparent w-full outline-none text-stone-600 text-sm px-2">
+                <button onclick="copiarPix()" class="bg-teal-700 text-white px-3 py-1 rounded-md text-sm hover:bg-teal-600 transition">Copiar</button>
+            </div>
+            <p id="msgCopia" class="text-teal-600 text-xs mt-2 hidden font-medium">Chave copiada com sucesso!</p>
+        </div>
+    </div>
+
+    <script>
+        function abrirPix(nomePresente) {
+            document.getElementById('modalPix').classList.remove('hidden');
+            document.getElementById('textoModal').innerText = `Você escolheu a cota: "${nomePresente}". Use os dados abaixo para transferir o valor correspondente.`;
+        }
+        function fecharPix() {
+            document.getElementById('modalPix').classList.add('hidden');
+            document.getElementById('msgCopia').classList.add('hidden');
+        }
+        function copiarPix() {
+            var chaveInput = document.getElementById("chavePix");
+            chaveInput.select();
+            chaveInput.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(chaveInput.value);
+            document.getElementById('msgCopia').classList.remove('hidden');
+            setTimeout(() => {
+                document.getElementById('msgCopia').classList.add('hidden');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

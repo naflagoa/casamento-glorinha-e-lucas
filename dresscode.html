@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Code - Casamento Glorinha & Lucas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-stone-50 text-gray-800 font-sans scroll-smooth">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-3xl font-serif text-teal-900">G & L</a>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Início</a>
+                    <a href="local.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Local</a>
+                    <a href="presentes.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Lista de Presentes</a>
+                    <a href="dresscode.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Dress Code</a>
+                    <a href="rsvp.html" class="bg-teal-800 text-white px-5 py-2 rounded-full hover:bg-teal-700 transition shadow-md">
+                        Confirmar Presença
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="btn-mobile" class="text-teal-900 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu-mobile" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-stone-200 shadow-lg">
+            <div class="flex flex-col px-4 pt-2 pb-6 space-y-4 text-center">
+                <a href="index.html" class="text-teal-800 font-medium py-2 border-b border-stone-100">Início</a>
+                <a href="local.html" class="text-teal-800 font-medium py-2 border-b border-stone-100">Local</a>
+                <a href="presentes.html" class="text-teal-800 font-medium py-2 border-b border-stone-100">Lista de Presentes</a>
+                <a href="dresscode.html" class="text-teal-800 font-medium py-2 border-b border-stone-100">Dress Code</a>
+                <a href="rsvp.html" class="bg-teal-800 text-white px-5 py-3 rounded-full hover:bg-teal-700 shadow-md inline-block w-3/4 mx-auto mt-2">Confirmar Presença</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative pt-32 pb-20 px-4 min-h-screen bg-cover bg-center bg-fixed" style="background-image: url('flores.png');">
+        
+        <div class="absolute inset-0 bg-orange-50/50"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-serif text-teal-900 mb-6 drop-shadow-sm">Traje Sugerido</h1>
+            <p class="text-lg md:text-xl text-black max-w-2xl mx-auto mb-12">
+                Para o nosso grande dia, sugerimos o traje <strong>Passeio Completo / Social</strong>. Queremos que vocês se sintam lindos e confortáveis para celebrar conosco!
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                
+                <div class="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-stone-100">
+                    <h2 class="text-2xl font-serif text-teal-900 mb-4 flex items-center">
+                        <span class="mr-3 text-3xl">👗</span> Para Elas
+                    </h2>
+                    <ul class="space-y-4 text-black">
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">✦</span>
+                            <span>Vestidos longos ou midis são ótimas opções.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">✦</span>
+                            <span>A cerimônia será na igreja e a recepção em chácara, por isso, recomendamos saltos confortáveis ou blocados.</span>
+                        </li>
+                        <li class="flex items-start italic">
+                            <span class="text-teal-700 mr-2">✦</span>
+                            <span>Pedimos gentilmente que evitem as cores branco, off-white e marfim.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-stone-100">
+                    <h2 class="text-2xl font-serif text-teal-900 mb-4 flex items-center">
+                        <span class="mr-3 text-3xl">👔</span> Para Eles
+                    </h2>
+                    <ul class="space-y-4 text-black">
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">✦</span>
+                            <span>Terno completo ou costume (calça social, camisa social e paletó).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">✦</span>
+                            <span>O uso da gravata é opcional, mas bem-vindo para manter o estilo social.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-teal-700 mr-2">✦</span>
+                            <span>Sapatos sociais para completar o visual.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mt-12 bg-white/80 backdrop-blur-sm p-6 rounded-2xl max-w-2xl mx-auto border border-teal-100 shadow-md">
+                <p class="text-teal-900 font-medium">
+                    ✨ <strong>Dica:</strong> Em Piraquara, costuma esfriar um pouco ao entardecer. Recomendamos que tragam um agasalho leve para aproveitarem a festa até o final!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+        const menuMobile = document.getElementById('menu-mobile');
+
+        if (btnMobile && menuMobile) {
+            btnMobile.addEventListener('click', () => {
+                menuMobile.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

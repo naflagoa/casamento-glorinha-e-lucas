@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local - Casamento Glorinha & Lucas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-stone-50 text-gray-800 font-sans scroll-smooth">
+
+    <!-- Menu de Navegação -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-3xl font-serif text-teal-900">G & L</a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Início</a>
+                    <a href="local.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Local</a>
+                    <a href="presentes.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Lista de Presentes</a>
+                    <a href="dresscode.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Dress Code</a>
+                    <a href="rsvp.html" class="bg-teal-800 text-white px-5 py-2 rounded-full hover:bg-teal-700 transition shadow-md">
+                        Confirmar Presença
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Página Exclusiva do Local com Fundo Floral -->
+    <main class="relative pt-32 pb-20 px-4 min-h-screen bg-cover bg-center bg-fixed" style="background-image: url('flores.png');">
+        
+        <!-- Camada clara para a estampa não brigar com a leitura -->
+        <div class="absolute inset-0 bg-orange-50/50"></div>
+
+        <!-- Conteúdo da página (precisa do z-10 para ficar em cima da camada clara) -->
+        <div class="relative z-10 max-w-5xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-serif text-teal-900 mb-12 text-center drop-shadow-sm">Onde e Quando</h1>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card da Cerimônia -->
+                <div class="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-stone-100 flex flex-col items-center text-center">
+                    <svg class="w-12 h-12 text-teal-700 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg>
+                    <h2 class="text-2xl font-serif text-teal-900 mb-2">Cerimônia</h2>
+                    <p class="text-teal-800 font-medium mb-4">28 de novembro de 2026 às 15:40</p>
+                    <p class="text-stone-600 mb-6">Nossa casamento iniciará com uma cerimônia na Igreja Senhor Bom Jesus dos Passos, a Igreja Matriz de Piraquara.</p>
+                    <div class="w-full h-48 mb-4 rounded-lg overflow-hidden border border-stone-200">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.6552994968846!2d-49.0664654!3d-25.4411138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce9328f237bd1%3A0x6a23cd15b81a0212!2sIgreja%20Matriz%20Senhor%20Bom%20Jesus%20dos%20Passos!5e0!3m2!1spt-BR!2sbr!4v1716943000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <a href="https://maps.app.goo.gl/wSrxz2C8r2Lg6qRRA" target="_blank" class="text-teal-700 hover:text-teal-900 font-medium underline underline-offset-4 transition">Abrir rota no celular</a>
+                </div>
+
+                <!-- Card da Festa -->
+                <div class="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-stone-100 flex flex-col items-center text-center">
+                    <svg class="w-12 h-12 text-teal-700 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M6.75 21A1.75 1.75 0 015 19.25V14a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0123 14v5.25A1.75 1.75 0 0121.25 21H6.75z"></path></svg>
+                    <h2 class="text-2xl font-serif text-teal-900 mb-2">Recepção</h2>
+                    <p class="text-teal-800 font-medium mb-4">28 de novembro de 2026, após a cerimônia</p>
+                    <p class="text-stone-600 mb-6">Após a celebração diante de Deus, teremos uma recepção na chácara Casa dos Eucaliptos, em Piraquara.</p>
+                    <div class="w-full h-48 mb-4 rounded-lg overflow-hidden border border-stone-200">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115286.72149591444!2d-49.14170325492104!3d-25.446869403063143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce84c7e60b131%3A0xc68297bd8ddcc953!2sPiraquara%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1716943000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Chacara+Casa+dos+Eucaliptos+Piraquara" target="_blank" class="text-teal-700 hover:text-teal-900 font-medium underline underline-offset-4 transition">Abrir rota no celular</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

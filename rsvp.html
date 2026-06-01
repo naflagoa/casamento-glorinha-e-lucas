@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Presença - Casamento Glorinha & Lucas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-stone-50 text-gray-800 font-sans scroll-smooth">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-3xl font-serif text-teal-900">G & L</a>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Início</a>
+                    <a href="local.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Local</a>
+                    <a href="presentes.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Lista de Presentes</a>
+                    <a href="dresscode.html" class="text-teal-800 hover:text-teal-600 transition font-medium">Dress Code</a>
+                    <a href="rsvp.html" class="bg-teal-800 text-white px-5 py-2 rounded-full hover:bg-teal-700 transition shadow-md">
+                        Confirmar Presença
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative pt-32 pb-20 px-4 min-h-screen bg-cover bg-center bg-fixed" style="background-image: url('flores.png');">
+        
+        <div class="absolute inset-0 bg-orange-50/50"></div>
+
+        <div class="relative z-10 max-w-xl mx-auto">
+            <div class="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-stone-100">
+                
+                <h1 class="text-3xl md:text-4xl font-serif text-teal-900 mb-2 text-center">Confirmação de Presença</h1>
+                <p class="text-sm text-stone-600 text-center mb-8">Por favor, confirme sua presença até o dia 28 de Outubro de 2026.</p>
+                
+                <form id="formRsvp" onsubmit="enviarParaWhatsApp(event)" class="space-y-6">
+                    
+                    <div>
+                        <label for="nome" class="block text-sm font-medium text-teal-900 mb-1">Nome Completo</label>
+                        <input type="text" id="nome" required placeholder="Digite seu nome completo" 
+                               class="w-full px-4 py-2 border border-stone-200 rounded-lg focus:outline-none focus:border-teal-700 bg-white text-black">
+                    </div>
+
+                    <div>
+                        <label for="telefone" class="block text-sm font-medium text-teal-900 mb-1">Telefone / WhatsApp</label>
+                        <input type="tel" id="telefone" required placeholder="(41) 99999-9999" 
+                               class="w-full px-4 py-2 border border-stone-200 rounded-lg focus:outline-none focus:border-teal-700 bg-white text-black">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-teal-900 mb-2">Você comparecerá ao evento?</label>
+                        <div class="flex gap-6">
+                            <label class="flex items-center text-black cursor-pointer">
+                                <input type="radio" name="presenca" value="Sim, com certeza!" required class="w-4 h-4 text-teal-700 border-stone-300 focus:ring-teal-500 mr-2">
+                                Sim, com certeza! 
+                            </label>
+                            <label class="flex items-center text-black cursor-pointer">
+                                <input type="radio" name="presenca" value="Não poderei comparecer" required class="w-4 h-4 text-teal-700 border-stone-300 focus:ring-teal-500 mr-2">
+                                Não poderei comparecer 
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="adultos" class="block text-sm font-medium text-teal-900 mb-1">Qtd. Adultos (incluindo você)</label>
+                            <input type="number" id="adultos" min="1" max="10" value="1" required
+                                   class="w-full px-4 py-2 border border-stone-200 rounded-lg focus:outline-none focus:border-teal-700 bg-white text-black">
+                        </div>
+                        <div>
+                            <label for="criancas" class="block text-sm font-medium text-teal-900 mb-1">Qtd. Crianças (até 7 anos)</label>
+                            <input type="number" id="criancas" min="0" max="10" value="0" required
+                                   class="w-full px-4 py-2 border border-stone-200 rounded-lg focus:outline-none focus:border-teal-700 bg-white text-black">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="mensagem" class="block text-sm font-medium text-teal-900 mb-1">Deixe uma mensagem (Opcional)</label>
+                        <textarea id="mensagem" rows="3" placeholder="Se desejar, envie um recado carinhoso..." 
+                                  class="w-full px-4 py-2 border border-stone-200 rounded-lg focus:outline-none focus:border-teal-700 bg-white text-black"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-teal-800 text-white font-medium py-3 rounded-lg hover:bg-teal-700 transition shadow-md flex justify-center items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Enviar por WhatsApp
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function enviarParaWhatsApp(event) {
+            // Evita que a página recarregue ao clicar no botão
+            event.preventDefault();
+
+            // 1. COLOQUE O NÚMERO DOS NOIVOS AQUI (Apenas números, com DDI 55 e DDD)
+            // Exemplo: 5541999999999 (55 = Brasil, 41 = DDD, 999999999 = Número)
+            const numeroWhatsApp = "5541900000000";
+
+            // 2. Coletando os dados do formulário
+            const nome = document.getElementById('nome').value;
+            const telefone = document.getElementById('telefone').value;
+            const presenca = document.querySelector('input[name="presenca"]:checked').value;
+            const adultos = document.getElementById('adultos').value;
+            const criancas = document.getElementById('criancas').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            // 3. Montando a mensagem amigável
+            let texto = `*Confirmação de Presença - Casamento Glorinha & Lucas* 💍\n\n`;
+            texto += `*Nome:* ${nome}\n`;
+            texto += `*Telefone:* ${telefone}\n`;
+            texto += `*Status:* ${presenca}\n`;
+            
+            if (presenca.includes('Sim')) {
+                texto += `*Adultos:* ${adultos}\n`;
+                texto += `*Crianças:* ${criancas}\n`;
+            }
+
+            if (mensagem.trim() !== "") {
+                texto += `\n*Mensagem para vocês:*\n_${mensagem}_`;
+            }
+
+            // 4. Codificando o texto para URL e abrindo o WhatsApp
+            const textoCodificado = encodeURIComponent(texto);
+            const url = `https://wa.me/${numeroWhatsApp}?text=${textoCodificado}`;
+            
+            // Abre o link do WhatsApp em uma nova aba
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
